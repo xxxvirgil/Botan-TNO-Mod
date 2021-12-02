@@ -1,0 +1,331 @@
+﻿capital = 1628
+set_country_flag = is_russian_nation
+
+###Playable
+set_country_flag = tno_playable_country
+
+oob = "BOZ_1962"
+
+add_manpower = 12500
+
+add_ideas = {
+	### Standard ###
+	RUS_warlord_manpower
+    RUS_warlord_econ
+
+	### Ministers ###
+	CHT_Grigory_Semyonov_hog
+	CHT_Nikolay_Ukhtomsky_for
+	CHT_Ivan_Mikhailov_eco
+	CHT_Boris_Shepunov_sec
+
+	### Political ###
+	tno_political_parties_one_party_state
+	tno_religious_rights_secularism
+	tno_trade_unions_illegal
+	tno_immigration_closed_borders
+	tno_slavery_outlawed
+	tno_public_meetings_outlawed
+	tno_press_rights_state_press_only
+	tno_vote_franchise_no_voting
+	tno_refugees_banned
+	
+	### Military###
+	tno_conscription_two_year_draft
+	tno_women_military_assistance
+	tno_military_supervision_no_supervision
+	tno_training_minimal_training
+	tno_racial_integration_segregated_regiments
+	tno_draft_exemptions_none
+	
+	### Economic ###
+	tno_trade_laws_limited_exports
+	tno_income_taxation_elite_tax_exemptions
+	tno_minimum_wage_no_minimum_wage
+	tno_max_workhours_unlimited_work_day
+	tno_child_labor_restricted
+	tno_pensions_no_pensions
+	tno_unemployment_no_subsidies
+	
+	### Social ###
+	tno_safety_no_regulations
+	tno_health_care_support_for_emergencies
+	tno_pollution_no_controls
+	tno_education_elite_only
+	tno_penal_system_capital_punishment
+	tno_lgbt_rights_lgbt_outlawed
+	tno_gender_rights_traditional_roles
+	tno_minorities_segregation
+	tno_security_police
+
+	##SOCIETAL DEVELOPMENT##
+	
+	tno_army_professionalism_cronyism
+	tno_industrial_expertise_nascent
+	tno_industrial_equipment_power_tools
+	tno_agriculture_basic_mechanized
+	tno_research_facilities_outdated
+	tno_academic_base_basic_literacy
+}
+
+set_country_flag = tno_defined_startup_effectiveness
+
+set_variable = { tno_health_care_effectiveness = 0 }
+
+# ECONOMIC LAWS
+set_variable = { tno_trade_laws_effectiveness = 75 }
+set_variable = { tno_income_taxation_effectiveness = 35 }
+set_variable = { tno_minimum_wage_effectiveness = 20 }
+set_variable = { tno_max_workhours_effectiveness = 20 }
+set_variable = { tno_child_labor_effectiveness = 60 }
+set_variable = { tno_pensions_effectiveness = 70 }
+set_variable = { tno_unemployment_effectiveness = 90 }
+
+# SOCIAL LAWS
+set_variable = { tno_safety_effectiveness = 50 }
+set_variable = { tno_health_care_effectiveness = 5 }
+set_variable = { tno_pollution_effectiveness = 30 }
+set_variable = { tno_education_effectiveness = 40 }
+set_variable = { tno_penal_system_effectiveness = 70 }
+set_variable = { tno_lgbt_rights_effectiveness = 80 }
+set_variable = { tno_gender_rights_effectiveness = 65 }
+set_variable = { tno_minorities_effectiveness = 55 }
+set_variable = { tno_security_effectiveness = 90 }
+
+# POLITICAL LAWS
+set_variable = { tno_political_parties_effectiveness = 90 }
+set_variable = { tno_religious_rights_effectiveness = 45 }
+set_variable = { tno_trade_unions_effectiveness = 75 }
+set_variable = { tno_immigration_effectiveness = 30 }
+set_variable = { tno_slavery_effectiveness = 60 }
+set_variable = { tno_public_meetings_effectiveness = 80 }
+set_variable = { tno_press_rights_effectiveness = 70 }
+set_variable = { tno_vote_franchise_effectiveness = 100 }
+set_variable = { tno_refugees_effectiveness = 10 }
+
+# MILITARY LAWS
+set_variable = { tno_conscription_effectiveness = 75 }
+set_variable = { tno_women_effectiveness = 50 }
+set_variable = { tno_military_supervision_effectiveness = 40 }
+set_variable = { tno_training_effectiveness = 40 }
+set_variable = { tno_racial_integration_effectiveness = 20 }
+set_variable = { tno_draft_exemptions_effectiveness = 70 }
+
+set_technology = {
+	##INFANTRY##
+	infantry_weapons_1 = 1
+	infantry_weapons_2 = 1
+	infantry_weapons_improvements_1 = 1
+	infantry_weapons_improvements_2 = 1
+	infantry_weapons_improvements_3 = 1
+	infantry_weapons_improvements_4 = 1
+	basic_infantry_equipment = 1
+	support_weapons = 1
+	infantry_at = 1
+	infantry_at2 = 1
+	motorized_infantry = 1
+	#infantry_aa = 1
+	#infantry_aa2 = 1
+	##SUPPORT##
+	tech_support = 1
+	tech_engineers = 1
+	tech_engineers_flamethrowers_1 = 1
+	tech_recon = 1
+	tech_recon2 = 1
+	##ARTY##
+	artillery4 = 1
+	antiair5 = 1
+	##ARMOR##
+	advanced_light_tank = 1
+	advanced_medium_tank = 1
+	mechanised_infantry3 = 1
+
+	APC_1950 = 1
+	APC_1950_basic_turret = 1
+	#APC_1950_basic_engine = 1
+
+	IFV_1950 = 1
+	
+	MBT_1950 = 1
+
+	##AIRCRAFT##
+	early_fighter = 1
+	fighter_1945 = 1
+	interceptor_1945 = 1
+	CAS_1945 = 1
+	##HEAVY AIRCRAFT##
+	strategic_bomber1 = 1
+	heavy_air_1945 = 1
+	tac_bomber1 = 1
+	tac_air_1945 = 1
+	transport_air1 = 1
+	transport_air_1945 = 1
+	##HELICOPTERS##
+	helicopter_engines = 1
+	very_early_helicopter = 1
+	early_helicopter = 1
+	##ENGINEERING##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	basic_encryption = 1
+	basic_decryption = 1
+	##INDUSTRY##
+	ww2_line_production = 1
+	batch_production_1 = 1
+	building_construction_1 = 1
+	resource_extraction_methods = 1
+	excavation0 = 1
+	energy_technology_1 = 1
+	social_construction_1 = 1
+	military_construction_1 = 1
+}
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 0
+	ultranationalism = 0
+	national_socialism = 0
+	socialist = 0
+	social_democracy = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
+	authoritarian_democracy = 0
+	despotism = 100
+	fascism = 0
+	
+}
+
+### Country Leaders ###
+create_country_leader = {
+	name = "Shihiro Botan"
+	desc = "POLITICS_TSAR_MIKHAIL_DESC"
+	picture = "Shishiro_botan.dds"
+	expire = "1999.1.1"
+	ideology = despotism_military_junta_subtype
+	traits = { the_reluctant_tsar }
+}
+
+### Generals ###
+create_field_marshal = {
+	name = "Grigory Semyonov"
+	picture = "Portrait_Chita_Grigory_Semyonov.dds"
+	desc = "MILITARY_GRIGORY_SEMYONOV_DESC"
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	traits = { old_guard war_hero cavalry_officer inspirational_leader cavalry_leader }
+	id = 3741
+}
+
+create_field_marshal = {
+	name = "Boris Shepunov"
+	picture = "Portrait_Chita_Boris_Shepunov.dds"
+	skill = 3
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+	traits = { old_guard inflexible_strategist unyielding_defender organizer }
+	id = 3742
+}
+
+create_corps_commander = {
+	name = "Leonid Chernykh"
+	picture = "Portrait_Chita_Leonid_Chernykh.dds"
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+	traits = { career_officer infantry_leader }
+	id = 3743
+}
+
+create_corps_commander = {
+	name = "Vladimir Abramov"
+	picture = "Portrait_Chita_Vladimir_Abramov.dds"
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	traits = { career_officer war_hero organizer }
+	id = 3744
+}
+
+create_corps_commander = {
+	name = "Leonid Mustafin"
+	picture = "Portrait_Chita_Leonid_Mustafin.dds"
+	desc = "MILITARY_LEONID_MUSTAFIN_DESC"
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+	traits = { trait_cautious bearer_of_artillery organizer }
+	id = 3745
+}
+
+create_corps_commander = {
+	name = "Vissarion Mustafin"
+	picture = "Portrait_Chita_Vissarion_Mustafin.dds"
+	desc = "MILITARY_VISSARION_MUSTAFIN_DESC"
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+	traits = { war_hero career_officer trait_engineer }
+	id = 3746
+}
+
+create_corps_commander = {
+	name = "Nikolay Kossov"
+	picture = "Portrait_Chita_Nikolay_Kossov.dds"
+	desc = "MILITARY_NIKOLAY_KOSSOV_DESC"
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+	traits = { old_guard war_hero winter_specialist hill_fighter }
+	id = 3747
+}
+
+create_corps_commander = {
+	name = "Dmitry Volkogonov"
+	desc = "MILITARY_DMITRY_VOLKOGONOV_DESC"
+	picture = "Portrait_Chita_Dmitry_Volkogonov.dds"
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	traits = { career_officer trickster }
+	id = 3748
+}
+
+create_corps_commander = {
+	name = "Georgy Dzhakelli"
+	picture = "Portrait_Chita_Georgy_Dzhakelli.dds"
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	traits = { old_guard politically_connected skilled_staffer }
+	id = 3749
+}
+
+set_country_flag = japan_non_hostile
+set_country_flag = US_non_hostile

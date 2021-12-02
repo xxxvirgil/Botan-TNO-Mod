@@ -1,0 +1,149 @@
+focus_tree = {
+	id = FocusTree0
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOZ
+		}
+	}
+	default = no
+	focus = {
+		id = BOZ1
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 2
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = BOZ_L1
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0
+		prerequisite = {
+			focus = BOZ1
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = BOZ_L3
+		icon = GFX_goal_generic_construct_civilian
+		cost = 0
+		prerequisite = {
+			focus = BOZ_L1
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = BOZ_L4
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0
+		prerequisite = {
+			focus = BOZ_L3
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = BOZ_L2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0
+		prerequisite = {
+			focus = BOZ_L1
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = BOZ_R1
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0
+		prerequisite = {
+			focus = BOZ1
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = BOZ_R2
+		icon = GFX_goal_generic_build_airforce
+		cost = 0
+		prerequisite = {
+			focus = BOZ_R1
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = BOZ_AIRO1
+		icon = GFX_goal_generic_build_airforce
+		cost = 0
+		prerequisite = {
+			focus = BOZ_R2
+		}
+		prerequisite = {
+			focus = BOZ_L2
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = BOZ_R3
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 0
+		prerequisite = {
+			focus = BOZ_R1
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = BOZ_R4
+		icon = GFX_goal_generic_small_arms
+		cost = 0
+		prerequisite = {
+			focus = BOZ_R3
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = BOZ_PREFINAL
+		icon = GFX_goal_generic_army_artillery
+		cost = 0
+		prerequisite = {
+			focus = BOZ_L4
+		}
+		prerequisite = {
+			focus = BOZ_AIRO1
+		}
+		prerequisite = {
+			focus = BOZ_R4
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = BOZ_VOYNACHITA
+		icon = GFX_goal_generic_major_war
+		cost = 0
+		prerequisite = {
+			focus = BOZ_PREFINAL
+		}
+		x = 8
+		y = 5
+
+	}
+}
