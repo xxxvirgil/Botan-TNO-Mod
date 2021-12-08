@@ -1,0 +1,58 @@
+﻿division_template = {
+	name = "Gebirgsjäger"
+	division_names_group = CAU_mountaineers
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Strelkovaya Diviziya"
+	division_names_group = NOV_Infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+
+units = {
+    division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7725
+		division_template = "Gebirgsjäger"
+		start_experience_factor = 0.2
+	}
+}
+
+units = {
+    division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7725
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+	}
+}

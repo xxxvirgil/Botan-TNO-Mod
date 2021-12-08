@@ -1,0 +1,263 @@
+focus_tree = {
+	id = FocusTree0
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOZ
+		}
+	}
+	default = no
+	focus = {
+		id = BOZ1
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 3
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = BOZ_L1
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 3
+		prerequisite = {
+			focus = BOZ1
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+set_temp_variable = { temp_econ_spending_amount = 0.00 }
+        econ_spend_money_once_effect_raw_money = yes
+		set_temp_variable = { pus_temp = 1 }
+        econ_pus_change = yes
+		
+}
+		completion_reward = {
+        add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+     }
+        }
+	}
+	focus = {
+		id = BOZ_L3
+		icon = GFX_goal_generic_construct_civilian
+		cost = 3
+		prerequisite = {
+			focus = BOZ_L1
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+        add_building_construction = {
+    type = offices
+    level = 2
+    instant_build = yes
+     }
+        }
+		completion_reward = {
+set_temp_variable = { temp_econ_spending_amount = 0.00 }
+        econ_spend_money_once_effect_raw_money = yes
+}
+
+	}
+	focus = {
+		id = BOZ_L4
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 3
+		prerequisite = {
+			focus = BOZ_L1
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+        add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+     }
+        }
+		completion_reward = {
+set_temp_variable = { temp_econ_spending_amount = 0.00 }
+        econ_spend_money_once_effect_raw_money = yes
+}
+
+	}
+	focus = {
+		id = BOZ_L2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 3
+		prerequisite = {
+			focus = BOZ_L3
+		}
+		prerequisite = {
+			focus = BOZ_L4
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+set_temp_variable = { pus_temp = 2 }
+        econ_pus_change = yes
+set_temp_variable = { temp_econ_spending_amount = 0.00 }
+        econ_spend_money_once_effect_raw_money = yes
+		        TNO_improve_industrial_expertise_med = yes
+    }
+			completion_reward = {
+        add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+     }
+        }
+}
+
+	focus = {
+		id = BOZ_R1
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 3
+		prerequisite = {
+			focus = BOZ1
+		}
+		x = 10
+		y = 1
+				completion_reward = {
+		add_manpower = 1250
+		army_experience = 10
+		}
+				completion_reward = {
+				add_equipment_to_stockpile = {
+    type = infantry_equipment_2
+    amount = 500
+    producer = JAP
+}
+				add_equipment_to_stockpile = {
+    type = anti_tank_equipment_1
+    amount = 40
+    producer = JAP
+}
+				}
+	}
+	
+	focus = {
+		id = BOZ_R2
+		icon = GFX_goal_generic_build_airforce
+		cost = 3
+		prerequisite = {
+			focus = BOZ_R1
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+    set_technology = {
+    transport_helicopter_1960 = 1
+   }
+        }
+     completion_reward = {
+        add_equipment_to_stockpile = {
+    type = transport_helicopter_equipment_1
+    amount = 5
+    producer = JAP
+        }
+     }
+
+	}
+	focus = {
+		id = BOZ_R4
+		icon = GFX_goal_generic_small_arms
+		cost = 3
+		prerequisite = {
+			focus = BOZ_R1
+		}
+		x = 11
+		y = 2
+						completion_reward = {
+				add_equipment_to_stockpile = {
+    type = infantry_equipment_0
+    amount = 1500
+    producer = JAP
+}
+				add_equipment_to_stockpile = {
+    type = anti_tank_equipment
+    amount = 110
+    producer = JAP
+}
+				}
+completion_reward = {
+				add_equipment_to_stockpile = {
+    type = artillery_equipment_2
+    amount = 30
+    producer = JAP
+}
+				add_equipment_to_stockpile = {
+    type = support_equipment_1
+    amount = 75
+    producer = JAP
+}
+				}
+	}
+	focus = {
+		id = BOZ_R3
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 3
+		prerequisite = {
+			focus = BOZ_R2
+		}
+		prerequisite = {
+			focus = BOZ_R4
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+		add_manpower = 500
+		}
+
+	}
+	focus = {
+		id = BOZ_AIRO1
+		icon = GFX_goal_generic_build_airforce
+		cost = 3
+		prerequisite = {
+			focus = BOZ_L2
+		}
+		prerequisite = {
+			focus = BOZ_R3
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+		load_oob = "BOZ_aero"
+		}
+
+	}
+	focus = {
+		id = BOZ_PREFINAL
+		icon = GFX_goal_generic_army_artillery
+		cost = 3
+		prerequisite = {
+			focus = BOZ_AIRO1
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+		load_oob = "BOZ_prefinal"
+		}
+
+	}
+	focus = {
+		id = BOZ_VOYNACHITA
+		icon = GFX_goal_generic_major_war
+		cost = 3
+		prerequisite = {
+			focus = BOZ_PREFINAL
+		}
+		x = 8
+		y = 6
+		completion_reward = {
+        declare_war_on = {
+    target = CHT
+    type = annex_everything
+     }
+     }
+	}
+}

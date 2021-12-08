@@ -1,0 +1,8 @@
+
+supply_area={
+	id=399
+	name="BOZ_399"
+	value=2
+	states={
+		1628
+	}
